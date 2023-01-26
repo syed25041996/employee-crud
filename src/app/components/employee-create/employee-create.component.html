@@ -1,0 +1,21 @@
+<section class="form">
+    <div class="container form-container">
+        <form [formGroup]="employeeForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="email" class="form-control" id="name" placeholder="name" formControlName="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" formControlName="email">
+              </div>
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input type="email" class="form-control" id="age" placeholder="32" formControlName="age">
+              </div>
+              <div class="m-3">
+                <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+              </div>
+            </form>
+    </div>
+</section>
